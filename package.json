@@ -1,0 +1,65 @@
+{
+  "name": "loginTask",
+  "version": "1.0.0",
+  "description": "\"Sample POC login Task\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "webpack-dev-server  --mode development --inline --hot --open",
+    "build": "webpack  --mode development",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gjsln/loginTask.git"
+  },
+  "keywords": [
+    "Media",
+    "Developers"
+  ],
+  "author": "Gnanavel Nandagopal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gjsln/loginTask/issues"
+  },
+  "homepage": "https://github.com/gjsln/loginTask#readme",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.3.1",
+    "@types/react": "^16.9.1",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-router-dom": "^4.3.4",
+    "awesome-typescript-loader": "^5.2.1",
+    "axios": "^0.19.0",
+    "babel-loader": "^8.0.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "core-js": "2",
+    "css-loader": "^2.1.0",
+    "express": "^4.17.1",
+    "file-loader": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mini-css-extract-plugin": "^0.5.0",
+    "mongoose": "^5.5.5",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "typescript": "^3.5.3",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1",
+    "react": "^16.9.0",
+    "react-redux": "^7.1.0",
+    "react-router-dom": "^5.0.1",
+    "redux": "^4.0.4",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "react-dom": "^16.9.0"
+  }
+}
