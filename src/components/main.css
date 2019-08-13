@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.main-container {
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.divider {
+  padding: 0.5em 0;
+}
