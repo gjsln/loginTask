@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Route, HashRouter as Router, Switch } from 'react-router-dom';
-import { HelloComponent, Login } from './components';
+import { HelloComponent, Login, SignUp } from './components';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import './components/main.css';
@@ -12,6 +12,7 @@ export const AppRouter: React.StatelessComponent<{}> = () => {
         <div className='main-container '>
           <Switch>
             <Route exact path='/' component={Login} />
+            <Route path='/signup' component={SignUp} />
             <Route path='/hello' component={HelloComponent} />
           </Switch>
         </div>

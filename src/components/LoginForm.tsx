@@ -1,7 +1,12 @@
 import * as React from 'react';
+import { Link, LinkProps } from 'react-router-dom';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import './main.css';
+
+const AdapterLink = React.forwardRef<HTMLAnchorElement, LinkProps>(
+  (props, ref) => <Link innerRef={ref as any} to='/signup' {...props} />
+);
 
 export const LoginForm = () => {
   return (
@@ -12,7 +17,7 @@ export const LoginForm = () => {
         Login
       </Button>
       <div className='divider' />
-      <Button variant='contained' color='primary'>
+      <Button variant='contained' color='primary' component={AdapterLink}>
         Sign Up
       </Button>
     </div>
